@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!--
+This file is part of BenchExec, a framework for reliable benchmarking:
+https://github.com/sosy-lab/benchexec
+
+SPDX-FileCopyrightText: 2007-2020 Dirk Beyer <https://www.sosy-lab.org>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 2.3//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+
+<!-- Example file for benchmark definition for BenchExec,
+     using tool "cbmc" with a CPU time limit of 60s,
+     1000 MB of RAM, and 1 CPU core.
+     To use this file, CBMC needs to be on PATH
+     and C programs from SV-COMP need to be available in directory programs/
+     (or input files need to be changed). -->
+
+<benchmark tool="chatgpt"
+           displayName="Benchmark for ChatGPT"
+           timelimit="90s"
+           hardtimelimit="120s"
+           memlimit="1000 MB"
+           cpuCores="1">
+
+<!--    <rundefinition name="KompletterTest1">-->
+<!--        <option name="&#45;&#45;test">1</option>-->
+<!--        <tasks name="KompletterTest1">-->
+<!--            <includesfile>/home/darwin/PycharmProjects/sv-benchmarks/c/ReachSafety-Loops.set</includesfile>-->
+<!--            <propertyfile>/home/darwin/PycharmProjects/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>-->
+<!--    </tasks>-->
+<!--  </rundefinition>-->
+
+<!--  <rundefinition name="KompletterTest2">-->
+<!--    <option name="&#45;&#45;test">2</option>-->
+<!--    <tasks name="KompletterTest2">-->
+<!--        <includesfile>/home/darwin/PycharmProjects/sv-benchmarks/c/ReachSafety-Loops.set</includesfile>-->
+<!--        <propertyfile>/home/darwin/PycharmProjects/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>-->
+<!--    </tasks>-->
+<!--  </rundefinition>-->
+
+<!--  <rundefinition name="KompletterTest3">-->
+<!--    <option name="&#45;&#45;test">3</option>-->
+<!--    <tasks name="KompletterTest3">-->
+<!--        <includesfile>/home/darwin/PycharmProjects/sv-benchmarks/c/ReachSafety-Loops.set</includesfile>-->
+<!--        <propertyfile>/home/darwin/PycharmProjects/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>-->
+<!--    </tasks>-->
+<!--  </rundefinition>-->
+
+  <rundefinition name="KompletterTestOption4">
+    <option name="--test">4</option>
+    <tasks name="KompletterTest4">
+        <includesfile>/home/darwin/PycharmProjects/sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+        <propertyfile>/home/darwin/PycharmProjects/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+</benchmark>
